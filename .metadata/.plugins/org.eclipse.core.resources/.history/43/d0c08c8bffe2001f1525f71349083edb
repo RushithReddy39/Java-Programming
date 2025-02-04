@@ -1,0 +1,24 @@
+
+public class Main {
+	String name;
+	int age;
+	int marks;
+	public Main(String a,int b,int c) {
+		name = a;
+		age = b;
+		marks = c;
+	}
+	public static void main(String[] args) {
+		Main obj[] = {};
+		obj[0] = new Main("Rushith",23,45);
+		obj[1] = new Main("Reddy",20,46);
+		obj[2] = new Main("Rome",19,45);
+		obj[3] = new Main("Ragav",63,65);
+		obj[4] = new Main("Ramu",15,95);
+		
+        
+	}
+	}
+
+
+

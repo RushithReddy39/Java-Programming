@@ -1,0 +1,41 @@
+
+public class Main {
+	String name;
+	String Customer_ID;
+	private Account acc;
+	
+	public Main(String n,String c,int acc_num,int acc_bal) {
+		name = n;
+		Customer_ID = c;
+		this.acc = new Account(acc_num,acc_bal);
+	}
+	public static void main(String[] args) {
+		Main obj = new Main("Rushith","ERT",4567,56000);
+		System.out.print(obj.acc.acc_num);
+	
+
+	}
+
+
+	
+	}
+class Account{
+	private int acc_num;
+	private int acc_bal;
+	public Account(int s,int q) {
+		acc_num = s;
+		acc_bal = q;
+	}
+	public void add_bal(int m) {
+		this.acc_bal += m;
+	}
+	public void cut_bal(int m) {
+		this.acc_bal -= m;
+	}
+	public void disp_bal() {
+		System.out.println("Your account number: "+this.acc_num+" Your balance: "+this.acc_bal);
+	}
+
+	}
+
+
